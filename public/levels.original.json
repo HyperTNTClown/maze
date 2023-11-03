@@ -1,0 +1,664 @@
+{
+  "levels": [
+    {
+      "name": "Level 0",
+      "size": 5,
+      "start": {
+        "x": 2,
+        "y": 4
+      },
+      "id": 0,
+      "fields": [
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 0
+          },
+          "directions": [
+            "d",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 0
+          },
+          "directions": [
+            "d"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 0
+          },
+          "directions": [
+            "l",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 0
+          },
+          "directions": [
+            "dl"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 0
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 1
+          },
+          "directions": [
+            "u",
+            "d"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 1
+          },
+          "directions": [
+            "ur",
+            "d"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 1
+          },
+          "directions": [],
+          "type": "goal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 1
+          },
+          "directions": [
+            "l",
+            "dl"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 1
+          },
+          "directions": [
+            "l",
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 2
+          },
+          "directions": [
+            "u",
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 2
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 2
+          },
+          "directions": [
+            "ul",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 2
+          },
+          "directions": [
+            "u",
+            "dl",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 2
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 3
+          },
+          "directions": [
+            "u",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 3
+          },
+          "directions": [
+            "ur",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 3
+          },
+          "directions": [
+            "r",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 3
+          },
+          "directions": [
+            "ul",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 3
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 4
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 4
+          },
+          "directions": [
+            "l",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 4
+          },
+          "directions": [
+            "l",
+            "ur"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 4
+          },
+          "directions": [
+            "u",
+            "ur"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 4
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "stepAdd"
+        }
+      ]
+    },
+    {
+      "name": "Level 1",
+      "size": 6,
+      "id": 1,
+      "start": {
+        "x": 0,
+        "y": 0
+      },
+      "fields": [
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 0
+          },
+          "directions": [
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 0
+          },
+          "directions": [
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 0
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 0
+          },
+          "directions": [
+            "d",
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 0
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 0
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 1
+          },
+          "directions": [
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 1
+          },
+          "directions": [
+            "dr",
+            "dl"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 1
+          },
+          "directions": [
+            "dr",
+            "dl"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 1
+          },
+          "directions": [
+            "l",
+            "dl"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 1
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 1
+          },
+          "directions": [
+            "l",
+            "ul",
+            "u"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 2
+          },
+          "directions": [
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 2
+          },
+          "directions": [
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 2
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 2
+          },
+          "directions": [
+            "l"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 2
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 2
+          },
+          "directions": [
+            "u",
+            "d"
+          ],
+          "type": "stepRem"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 3
+          },
+          "directions": [
+            "d",
+            "ur"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 3
+          },
+          "directions": [
+            "d",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 3
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 3
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 3
+          },
+          "directions": [
+            "r",
+            "dl"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 3
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 4
+          },
+          "directions": [
+            "dr",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 4
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 4
+          },
+          "directions": [
+            "ur",
+            "dr"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 4
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 4
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 4
+          },
+          "directions": [
+            "u",
+            "d"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 0,
+            "y": 5
+          },
+          "directions": [
+            "ur"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 1,
+            "y": 5
+          },
+          "directions": [
+            "r"
+          ],
+          "type": "stepAdd"
+        },
+        {
+          "coordinates": {
+            "x": 2,
+            "y": 5
+          },
+          "directions": [
+            "ul",
+            "r"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 3,
+            "y": 5
+          },
+          "directions": [
+            "r",
+            "l"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 4,
+            "y": 5
+          },
+          "directions": [
+            "u"
+          ],
+          "type": "normal"
+        },
+        {
+          "coordinates": {
+            "x": 5,
+            "y": 5
+          },
+          "directions": [],
+          "type": "goal"
+        }
+      ]
+    }
+  ]
+}

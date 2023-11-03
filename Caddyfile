@@ -1,0 +1,9 @@
+localhost {
+	tls internal
+	root * ./public
+	handle /php* {
+	    php_fastcgi 127.0.0.1:9000
+	    try_files {path} {path}/index.php {path}.php
+	}
+	reverse_proxy localhost:5173
+}

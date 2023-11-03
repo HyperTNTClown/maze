@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="icon/favicon.ico" rel="icon" sizes="any">
+    <link href="icon/icon.svg" rel="icon" type="image/svg+xml">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Maze</title>
+</head>
+<body>
+<main>
+    <div id="root"></div>
+    <div id="ui">
+        <div class="ui game-ui"> Steps: <span id="stepCount">0</span></div>
+        <div class="ui game-ui"> Stepsize: <span id="stepSize">1</span></div>
+        <div id="levelEditor">
+            <div id="typeSelect">
+                <input checked name="type" type="radio" value="normal">
+                <input name="type" type="radio" value="stepAdd">
+                <input name="type" type="radio" value="stepRem">
+                <input name="type" type="radio" value="goal">
+            </div>
+            <div class="editorCell ediDrop" id="arrowSelect"></div>
+            <div class="dropCell ediDrop">
+                <div class="editorCell dragCell"></div>
+            </div>
+            <input id="size" max="25" min="2" type="number" value="5">
+        </div>
+        <div class="ui"><a id="dec"> &lt; </a> <span id="level">Level</span> <a id="inc">&gt;</a></div>
+    </div>
+    <div id="saveDialog" class="dialog">
+        <input id="saveName" placeholder="Level-Name" type="text" class="dialogElement">
+        <input id="savePassword" placeholder="Password" type="password" class="dialogElement">
+        <button id="saveButton" class="dialogElement">Save</button>
+        <button id="cancelSaveButton" class="dialogElement">Cancel</button>
+    </div>
+    <div id="passwordDialog" class="dialog">
+        <input id="password" placeholder="Password" type="password" class="dialogElement">
+        <button id="passwordButton" class="dialogElement">Enter Leveleditor</button>
+        <button id="cancelPasswordButton" class="dialogElement">Cancel</button>
+    </div>
+</main>
+<script src="/src/main.ts" type="module"></script>
+</body>
+</html>

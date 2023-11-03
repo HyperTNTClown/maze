@@ -1,0 +1,171 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+}
+
+#root {
+    aspect-ratio: 1/1;
+    display: grid;
+    width: 95vmin;
+    height: 95vmin;
+}
+
+.cell, .editorCell {
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    transition: background-color 0.25s;
+    position: relative;
+}
+
+.editorCell {
+    height: 100%;
+}
+
+.ediDrop {
+    height: 15vmin;
+}
+
+/*
+.stepRem {
+    box-shadow: inset 0 0 25px 2px #ffdb00, inset 0 0 20px 20px #5b510aaa;
+}
+
+.stepAdd {
+    box-shadow: inset 0 0 25px 2px #ff0000, inset 0 0 20px 20px #5b510aaa;
+}
+*/
+.goal {
+    box-shadow: inset 0 0 25px 2px #00ff00, inset 0 0 20px 20px #5b510aaa;
+}
+
+.cell:hover, .editorCell:hover {
+    transition: all 0.25s;
+    box-shadow: inset 0px 0px 60px #363636;
+    cursor: pointer;
+}
+
+.cell.active {
+    background-color: #3d3d3d;
+    z-index: 999;
+}
+
+#ui {
+    position: relative;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(50%);
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.ui {
+    width: 13vmin;
+    padding: 1vmin 1vmin;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#levelEditor {
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+}
+
+input[type=number] {
+    width: 15vmin;
+    height: 4vmin;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    width: 50vmin;
+    height: 25vmin;
+    background: #3d3d3daa;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 20px 5px rgba(105, 66, 107, 0.67), 0 0 40px 5px rgba(105, 66, 107, 0.67), 0 0 80px 5px rgba(105, 66, 107, 0.67);
+    z-index: 9999;
+}
+
+.dialogElement {
+    font-size: 1.25rem !important;
+    width: 20vmin;
+    margin: .25vmin;
+}
+
+#arrowSelect {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#typeSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: center;
+    background: linear-gradient(90deg, #9d9d9d 0%, #ff0000 33%, #ffdb00 66%, #00ff00 100%);
+    height: 3vmin;
+    border-radius: .5rem;
+}
+
+main:focus {
+    outline: none;
+}
