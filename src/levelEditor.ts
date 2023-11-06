@@ -142,7 +142,7 @@ export class LevelEditor {
             saveDialog.style.display = 'flex'
             saveDialog.style.visibility = 'visible'
             let saveButton = document.getElementById('saveButton') as HTMLButtonElement
-            let cancelButton = document.getElementById('cancelButton') as HTMLButtonElement
+            let cancelButton = document.getElementById('cancelSaveButton') as HTMLButtonElement
             saveButton.onclick = () => {
                 console.log("Click")
                 this.saveLevel()
