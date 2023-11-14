@@ -74,7 +74,10 @@ body {
 
 .cell:hover, .editorCell:hover {
     transition: all 0.25s;
-    box-shadow: inset 0px 0px 60px #363636;
+    /*box-shadow: inset 0px 0px 60px #363636;*/
+    box-shadow: inset 0px 0px 60px rgba(0, 220, 255, 0.25);
+;
+
     cursor: pointer;
 }
 
@@ -183,4 +186,11 @@ main:focus {
 .controls {
     display: flex;
     flex-direction: column;
+}
+
+#tooManySteps {
+    display: block;
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
 }

@@ -182,6 +182,7 @@ export class LevelEditor {
             size: this.size,
             start: startCoords,
             id: -1,
+            max_steps: 0,
             fields: (): Field[] => {
                 return fieldArray.map(field => {
                     return new Field(field.getCoordinates(), field.getDirections(), field.getType())
@@ -313,6 +314,7 @@ export class LevelEditor {
         this.levelData.name = (document.getElementById('saveName') as HTMLInputElement).value
         this.levelData.id = Math.floor(Math.random() * 100000000000000)
         let formData = new FormData()
+        this.levelData.max_steps
         let levelJson = convertToJSON(this.levelData)
         formData.append('level', JSON.stringify(levelJson))
         let password = (document.getElementById('password') as HTMLInputElement).value

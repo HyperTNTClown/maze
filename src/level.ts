@@ -11,6 +11,7 @@ export class Level {
     name = "Level";
     private id: number | undefined;
     private beat = false;
+    private maxSteps = 0;
 
     constructor(level: number | LevelType) {
         this.populateLevel(level);
@@ -24,6 +25,7 @@ export class Level {
                 this.board = new Board(value[level]);
                 this.name = value[level].name;
                 this.id = level;
+                this.maxSteps = value[level].max_steps;
                 this.displayLevelName();
             });
         } else {
@@ -31,6 +33,7 @@ export class Level {
             this.board = new Board(level);
             this.name = level.name;
             this.id = level.id;
+            this.maxSteps = level.max_steps;
             this.displayLevelName();
         }
     }
@@ -42,6 +45,7 @@ export class Level {
 
     private displayLevelName() {
         document.getElementById('level')!.innerText = this.name;
+        document.getElementById('maxSteps')!.innerText = String(this.maxSteps);
     }
 
     private displayStepDetails() {
@@ -167,6 +171,11 @@ export class Level {
     }
 
     private completeLevel() {
+        if (this.currentStepCount > this.maxSteps) {
+            this.resetLevel()
+            this.showTooManyStepsMessage()
+            return
+        }
         this.beat = true;
         this.registerCompletedLevel();
         this.animateLevelCompletion();
@@ -199,5 +208,25 @@ export class Level {
     }
 
 
-    public customOnBeat = () => {}
+    public customOnBeat = () => {
+    }
+
+    private showTooManyStepsMessage() {
+        anime({
+            targets: '#tooManySteps',
+            opacity: 1,
+            duration: 250,
+            easing: 'easeInOutSine',
+            direction: 'forwards'
+        });
+        setTimeout(() => {
+            anime({
+                targets: '#tooManySteps',
+                opacity: 0,
+                duration: 250,
+                easing: 'easeInOutSine',
+                direction: 'forwards'
+            });
+        }, 2000)
+    }
 }
