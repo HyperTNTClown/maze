@@ -45,7 +45,6 @@ export class Level {
 
     private displayLevelName() {
         document.getElementById('level')!.innerText = this.name;
-        document.getElementById('maxSteps')!.innerText = String(this.maxSteps);
     }
 
     private displayStepDetails() {
