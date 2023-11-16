@@ -195,7 +195,7 @@ export class LevelEditor {
 
 
     private showUI() {
-        document.getElementById('level')!.innerText = 'Editor'
+        //document.getElementById('level')!.innerText = 'Editor'
         document.querySelectorAll('.game-ui').forEach(element => {
             let el = element as HTMLDivElement
             el.style.display = 'none'

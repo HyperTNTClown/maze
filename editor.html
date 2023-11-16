@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <div id="root"></div>
+    <div id="ui">
+        <div id="levelEditor">
+            <div id="typeSelect">
+                <input checked name="type" type="radio" value="normal">
+                <input name="type" type="radio" value="stepAdd">
+                <input name="type" type="radio" value="stepRem">
+                <input name="type" type="radio" value="goal">
+            </div>
+            <div class="editorCell ediDrop" id="arrowSelect"></div>
+            <div class="dropCell ediDrop">
+                <div class="editorCell dragCell"></div>
+            </div>
+            <input id="size" max="25" min="2" type="number" value="5">
+        </div>
+    </div>
+    <div class="dialog" id="saveDialog">
+        <input class="dialogElement" id="saveName" placeholder="Level-Name" type="text">
+        <input class="dialogElement" id="savePassword" placeholder="Password" type="password">
+        <button class="dialogElement" id="saveButton">Save</button>
+        <button class="dialogElement" id="cancelSaveButton">Cancel</button>
+    </div>
+    <div class="dialog" id="passwordDialog">
+        <input class="dialogElement" id="password" placeholder="Password" type="password">
+        <button class="dialogElement" id="passwordButton">Enter Leveleditor</button>
+        <button class="dialogElement" id="cancelPasswordButton">Cancel</button>
+    </div>
+</main>
+<script src="/src/editor.ts" type="module"></script>
+</body>
+</html>
