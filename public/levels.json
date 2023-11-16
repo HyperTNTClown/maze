@@ -1,7 +1,7 @@
 {
   "levels": [
     {
-      "name": "Level 0",
+      "name": "Level 1",
       "size": 5,
       "max_steps": 26,
       "start": {
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "name": "Level 1",
+      "name": "Level 2",
       "size": 6,
       "id": 1,
       "max_steps": 41,
