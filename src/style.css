@@ -188,11 +188,17 @@ main:focus {
     flex-direction: column;
 }
 
-#tooManySteps {
-    display: block;
+#tooManySteps, #finishDialog {
+    display: flex;
     visibility: visible;
     opacity: 0;
     pointer-events: none;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    vertical-align: center;
 }
 
 #title {

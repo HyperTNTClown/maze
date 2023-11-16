@@ -1,8 +1,9 @@
 import {Board} from "./board.ts";
-import {fetchLevels, LevelType} from "./levels.ts";
+import {amountOfLevels, fetchLevels, LevelType} from "./levels.ts";
 import anime from "animejs";
 import {arrayToCoordinate} from "./field.ts";
 import {initGrid} from "./util.ts";
+import {game} from "./main.ts";
 
 export class Level {
     private board: Board | undefined;
@@ -208,6 +209,34 @@ export class Level {
 
 
     public customOnBeat = () => {
+        let diag = document.getElementById("finishDialog")!
+        let span = document.createElement("span")
+        if (game.currentLevel == (amountOfLevels - 1)) {
+            span.innerText = "Congratulations!\n You beat the Game\n --PLACEHOLDERTEXT--"
+        } else {
+            span.innerText = "Congratulations!\n You beat the Level"
+        }
+        diag.appendChild(span)
+        anime({
+            targets: '#finishDialog',
+            opacity: 1,
+            duration: 250,
+            easing: 'easeInOutSine',
+            direction: 'forwards'
+        });
+        if (game.currentLevel != (amountOfLevels -1)) {
+            setTimeout(() => {
+                anime({
+                    targets: '#finishDialog',
+                    opacity: 0,
+                    duration: 250,
+                    easing: 'easeInOutSine',
+                    direction: 'forwards'
+                });
+                diag.removeChild(span)
+            }, 2000)
+            game.currentLevel++
+        }
     }
 
     private showTooManyStepsMessage() {
