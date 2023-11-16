@@ -153,7 +153,8 @@ input[type=number] {
     background: #3d3d3daa;
     border-radius: 20px;
     backdrop-filter: blur(30px);
-    box-shadow: 0 0 20px 5px rgba(105, 66, 107, 0.67), 0 0 40px 5px rgba(105, 66, 107, 0.67), 0 0 80px 5px rgba(105, 66, 107, 0.67);
+    /*box-shadow: 0 0 20px 5px rgba(105, 66, 107, 0.67), 0 0 40px 5px rgba(105, 66, 107, 0.67), 0 0 80px 5px rgba(105, 66, 107, 0.67);*/
+    border: #3d3d3daa 1.5px solid;
     z-index: 9999;
 }
 
@@ -199,6 +200,13 @@ main:focus {
     align-items: center;
     font-size: 2rem;
     vertical-align: center;
+}
+
+#finishDialog {
+    font-size: 1.9rem;
+    height: 30vmin;
+    width: 55vmin;
+    padding: 10px;
 }
 
 #title {

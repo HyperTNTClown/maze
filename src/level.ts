@@ -214,9 +214,9 @@ export class Level {
         if (game.currentLevel == (amountOfLevels - 1)) {
             span.innerText = "Congratulations!\n You beat the Game\n --PLACEHOLDERTEXT--"
         } else {
-            span.innerText = "Congratulations!\n You beat the Level"
+            span.innerText = `Congratulations!\n You used the minimum number of steps!\nWelcome to Level ${game.currentLevel+2}!`
         }
-        diag.appendChild(span)
+        diag.replaceChildren(span)
         anime({
             targets: '#finishDialog',
             opacity: 1,
@@ -233,7 +233,6 @@ export class Level {
                     easing: 'easeInOutSine',
                     direction: 'forwards'
                 });
-                diag.removeChild(span)
             }, 2000)
             game.currentLevel++
         }
