@@ -17,7 +17,7 @@ document.addEventListener("keyup", (e) => {
 const showHelp = () => {
     let diag = document.getElementById("finishDialog")!
     let span = document.createElement("span")
-    span.innerText = "Reach the final goal tile.\n" +
+    span.innerText = "Try to reach the goal in the minimum amount of steps.\n" +
         "Red Arrows increase your stepsize by 1.\n" +
         "Yellow Arrows decrease it by 1."
     diag.replaceChildren(span)

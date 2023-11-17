@@ -73,6 +73,7 @@ export class Level {
         this.currentStepSize = 1;
         this.currentStepCount = 0;
         this.displayStepDetails();
+        document.getElementById("finishDialog")!.style.opacity = "0"
     }
 
     private rescaleCells() {
