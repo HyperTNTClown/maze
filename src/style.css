@@ -98,6 +98,35 @@ body {
     justify-content: center;
     height: 100vh;
 }
+@media (max-width: 800px) {
+    #ui {
+        position: relative;
+        flex-direction: row;
+        transform: translate(50%);
+        right: 50%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .ui {
+        transform: translateY(50%);
+        width: 20vmin;
+        padding: 30px;
+        grid-column-end: span 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    h1 {
+        /*grid-area: 1 / 1 / 2 / 5;*/
+        grid-column-end: span 1;
+    }
+    .controls {
+        display: none;
+        visibility: hidden;
+    }
+}
 
 .ui {
     width: 15vmin;
@@ -216,4 +245,8 @@ main:focus {
     font-size: 2.5rem;
     width: 25vmin;
     text-align: center;
+}
+
+code {
+    color: #8581ff;
 }
