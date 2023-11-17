@@ -10,8 +10,8 @@
 <body>
 <main>
     <div id="root"></div>
+    <h1 id="title">The Caucus Race</h1>
     <div id="ui">
-        <h1 id="title">The Caucus Race</h1>
         <div class="ui game-ui"> Steps: <span id="stepCount">0</span></div>
         <div class="ui game-ui"> Stepsize: <span id="stepSize">1</span></div>
 
@@ -23,12 +23,12 @@
             <span><code>space</code>:</span> <span>Possible Steps</span>
         </div>
     </div>
-    <div class="dialog" id="tooManySteps">
-        <span>You used too many steps!<br>Please try again</span>
-    </div>
-    <div class="dialog" id="finishDialog">
-    </div>
 </main>
+<div class="dialog" id="tooManySteps">
+    <span>You used too many steps!<br>Please try again</span>
+</div>
+<div class="dialog" id="finishDialog">
+</div>
 <script src="/src/main.ts" type="module"></script>
 </body>
 </html>

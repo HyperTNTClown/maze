@@ -30,8 +30,9 @@ body {
 #root {
     aspect-ratio: 1/1;
     display: grid;
-    width: 95vmin;
-    height: 95vmin;
+    /*width: 95vmin;*/
+    height: 90vh;
+    grid-area: 1 / 1 / 3 / 2;
 }
 
 .cell, .editorCell {
@@ -74,7 +75,6 @@ body {
 
 .cell:hover, .editorCell:hover {
     transition: all 0.25s;
-    /*box-shadow: inset 0px 0px 60px #363636;*/
     box-shadow: inset 0px 0px 60px rgba(0, 220, 255, 0.25);
 ;
 
@@ -87,49 +87,51 @@ body {
 }
 
 #ui {
-    position: relative;
+    align-self: start;
+    justify-self: center;
     z-index: 99999;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
-    transform: translateX(50%);
-    place-items: center;
-    justify-content: center;
+    place-items: flex-start;
+    justify-content: flex-start;
     height: 100vh;
+    width: 50%;
 }
 @media (max-width: 800px) {
-    #ui {
-        position: relative;
-        flex-direction: row;
-        transform: translate(50%);
-        right: 50%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+    main {
+        grid-template-columns: 2fr 1fr !important;
+        grid-template-rows: 1fr 2fr !important;
     }
-    .ui {
-        transform: translateY(50%);
-        width: 20vmin;
-        padding: 30px;
-        grid-column-end: span 1;
-        display: flex;
-        justify-content: flex-end;
-    }
-    h1 {
-        /*grid-area: 1 / 1 / 2 / 5;*/
-        grid-column-end: span 1;
+    #root {
+        width: 90vw !important;
+        height: auto !important;
+        grid-area: 2 / 1 / 2 / 3 !important;
     }
     .controls {
-        display: none;
-        visibility: hidden;
+        display: none !important;
+        visibility: hidden !important;
+    }
+    #ui {
+        position: relative;
+        align-self: center;
+        right: 5px;
+        height: auto !important;
+    }
+    .ui {
+        max-width: 100% !important;
+    }
+    .dialog {
+        width: 80vw !important;
+        height: 50vmin !important;
     }
 }
 
 .ui {
-    width: 15vmin;
+    width: 100%;
+    align-self: center;
+    max-width: 10vw;
     padding: 1vmin 1vmin;
     border-radius: 10px;
     backdrop-filter: blur(30px);
@@ -147,12 +149,15 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     place-content: center;
     place-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
     height: 100%;
     max-height: 100vh;
@@ -182,7 +187,6 @@ input[type=number] {
     background: #3d3d3daa;
     border-radius: 20px;
     backdrop-filter: blur(30px);
-    /*box-shadow: 0 0 20px 5px rgba(105, 66, 107, 0.67), 0 0 40px 5px rgba(105, 66, 107, 0.67), 0 0 80px 5px rgba(105, 66, 107, 0.67);*/
     border: #3d3d3daa 1.5px solid;
     z-index: 9999;
 }
@@ -239,12 +243,10 @@ main:focus {
 }
 
 #title {
-    position: absolute;
-    top: 5vh;
-    z-index: 9999;
     font-size: 2.5rem;
     width: 25vmin;
     text-align: center;
+    align-self: end;
 }
 
 code {
