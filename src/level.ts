@@ -213,7 +213,8 @@ export class Level {
         let diag = document.getElementById("finishDialog")!
         let span = document.createElement("span")
         if (game.currentLevel == (amountOfLevels - 1)) {
-            span.innerText = "Congratulations!\n You beat the Game\n --PLACEHOLDERTEXT--"
+            span.innerHTML = "Congratulations!<br> You beat the Game <br><a href='https://drive.google.com/file/d/1h3oJXD66wxUTz3NzUADhxR6Kl489CAdE/view?usp=sharing'>Click here for the next Puzzle</a>"
+            span.style.pointerEvents = "auto"
         } else {
             span.innerText = `Congratulations!\n You used the minimum number of steps!\nWelcome to Level ${game.currentLevel+2}!`
         }
