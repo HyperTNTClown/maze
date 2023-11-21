@@ -231,12 +231,12 @@ main:focus {
     align-content: center;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: min(2rem, 3.75vmin);
     vertical-align: center;
 }
 
 #finishDialog {
-    font-size: 1.9rem;
+    font-size: min(1.9rem, 3.5vmin);
     height: 30vmin;
     width: 55vmin;
     padding: 10px;
