@@ -235,7 +235,7 @@ export class Level {
                     easing: 'easeInOutSine',
                     direction: 'forwards'
                 });
-            }, 2000)
+            }, 5000)
             game.currentLevel++
         }
     }
